@@ -1,0 +1,47 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+
+.card-images {
+  padding-top: 10px;
+}
+
+.card {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.big-list {
+  font-size: 1.5rem;
+  line-height: 200%;
+}
+
+.big-list > li {
+  border-bottom: 1px solid black;
+}
+
+.contact-list {
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.tiny-divider {
+  font-size: small;
+}
+
+.big-contact {
+  font-size: 1.5rem;
+  line-height: 200%;
+}
+
+.span-right {
+  float: right;
+}
+
+.span-large {
+ font-size: 2rem;
+ font-weight: 700;
+}
+
+input {
+  font-size: 1.35rem;
+}

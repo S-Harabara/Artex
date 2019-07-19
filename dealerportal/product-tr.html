@@ -1,0 +1,596 @@
+<li data-selection="colors" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Color</h1>
+			<span class="steps-indicator">Step <b>2</b> of 5</span>
+		</header>
+    <p style="text-align: center; padding: 25px;">Choose Your Color</p>
+		<ul class="cd-product-previews">
+			<li class="selected"><img src="img/tr/tr-series-black.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/tr/tr-series-grey.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/tr/tr-series-red.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/tr/tr-series-blue.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/tr/tr-series-green.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/tr/tr-series-white.png" alt="Product Preview" class="product-preview"></li>
+		</ul>
+
+		<ul class="cd-product-customizer">
+			<li data-content="Black" data-price="0" class="selected"><a data-color="black" href="#0">Black</a><br><span class="large">Black</span></li>
+			<li data-content="Grey" data-price="0"><a data-color="grey" href="#0">Grey</a><br><span class="large"><span class="large">Grey</span</li>
+			<li data-content="Red" data-price="0"><a data-color="red" href="#0">Red</a><br><span class="large"><span class="large">Red</span</li>
+			<li data-content="Blue" data-price="0"><a data-color="blue" href="#0">Blue</a><br><span class="large"><span class="large">Blue</span</li>
+			<li data-content="Green" data-price="0"><a data-color="green" href="#0">Green</a><br><span class="large"><span class="large">Green</span</li>
+			<li data-content="White" data-price="0" class="selected"><a data-color="white" href="#0">White</a><br><span class="large">White</span></li>
+		</ul>
+	</section>
+</li>
+
+
+
+
+<li data-selection="accessories" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Options</h1>
+			<span class="steps-indicator">Step <b>4</b> of 4</span>
+		</header>
+<!-- this is the javascript for collapsing sections of the accessories list -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("activate");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";	}
+		});
+}
+</script>
+<!-- end of the collapsible javascript code -->
+<br><br><br><br>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Trailer Options</span></button>
+ <div class="content"><!--container for holding all of the collapsible content-->
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="43400">
+			<p>TR3005</p>
+			<ul class="trailer-description">
+				<li>Length: 30ft</li>
+				<li>Width:  8'</li>
+				<li>Wall Height: 5 ft</li>
+				<li>Capacity: 1200 cu. ft</li>
+			</ul>
+			<img class ="trailer-description-image" src="img/tr/tr-3005-diagram.png"></img>
+			<span class="price">$43,400</span>
+		</li>
+
+			<li class="js-option js-radio" data-price="43700">
+				<p>TR3006</p>
+				<ul class="trailer-description">
+					<li>Length: 30ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1440 cu. ft</li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3006-diagram.png"></img>
+				<span class="price">$43,700</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="43900">
+				<p>TR3205</p>
+				<ul class="trailer-description">
+					<li>Length: 32ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 5ft</li>
+					<li>Capacity: 1280 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3205-diagram.png"></img>
+				<span class="price">$43,900</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="44200">
+				<p>TR3206</p>
+				<ul class="trailer-description">
+					<li>Length: 32ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1536 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3206-diagram.png"></img>
+				<span class="price">$44,200</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="44400">
+				<p>TR3405</p>
+				<ul class="trailer-description">
+					<li>Length: 34ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 5ft</li>
+					<li>Capacity: 1360 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3405-diagram.png"></img>
+				<span class="price">$44,400</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="44700">
+				<p>TR3406</p>
+				<ul class="trailer-description">
+					<li>Length: 34ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1632 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3406-diagram.png"></img>
+				<span class="price">$44,700</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="45000">
+				<p>TR3605</p>
+				<ul class="trailer-description">
+					<li>Length: 36ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 5ft</li>
+					<li>Capacity: 1440 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3605-diagram.png"></img>
+				<span class="price">$45,000</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="45300">
+				<p>TR3606</p>
+				<ul class="trailer-description">
+					<li>Length: 36ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1728 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3606-diagram.png"></img>
+				<span class="price">$45,300</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="45500">
+				<p>TR3805</p>
+				<ul class="trailer-description">
+					<li>Length: 38ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 5ft</li>
+					<li>Capacity: 1520 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3805-diagram.png"></img>
+				<span class="price">$45,500</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="45800">
+				<p>TR3806</p>
+				<ul class="trailer-description">
+					<li>Length: 38ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1824 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-3806-diagram.png"></img>
+				<span class="price">$45,800</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="46000">
+				<p>TR4005</p>
+				<ul class="trailer-description">
+					<li>Length: 40ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 5ft</li>
+					<li>Capacity: 1600 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-4005-diagram.png"></img>
+				<span class="price">$46,000</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="46300">
+				<p>TR4006</p>
+				<ul class="trailer-description">
+					<li>Length: 40ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 1920 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-4006-diagram.png"></img>
+				<span class="price">$46,300</span>
+			</li>
+
+			<li class="js-option js-radio" data-price="49400">
+				<p>TR4506</p>
+				<ul class="trailer-description">
+					<li>Length: 45ft</li>
+					<li>Width: 8'</li>
+					<li>Wall Height: 6ft</li>
+					<li>Capacity: 2160 cu. ft. </li>
+				</ul>
+				<img class="trailer-description-image" src="img/tr/tr-4506-diagram.png"></img>
+				<span class="price">$49,400</span>
+			</li>
+
+		</ul>
+	</div><!--/end collapsible container-->
+
+	<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Optional Motor Upgrades</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+			<li class="js-option js-radio" data-price="920">
+				<p>TG0405 Parker Upgrade</p>
+				<span class="price">$920</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="1150">
+				<p>TG0530 Parker Upgrade</p>
+				<span class="price">$1,150</span>
+				<div class="check"></div>
+			</li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Floor Chain Options</span></button>
+
+	<div class="content"><!--start floor chain options-->
+		<ul class="accessories-list options-list">
+
+			<li class="js-option js-radio" data-price="0">
+				<p>88C Floor Chain</p>
+				<span class="price">Included</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="0">
+				<p>WR78 Floor Chain</p>
+				<span class="price">Included</span>
+				<div class="check"></div>
+			</li>
+		</ul>
+	</div> <!--end floor chain options-->
+
+	<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Landing Gear</span></button>
+	 <div class="content"><!--container for holding all of the collapsible content-->
+		 <ul class="accessories-list options-list">
+			 <li class="js-option" data-price="1650">
+				 <p>Jost Landing Gear</p>
+				 <span class="price">$1,650</span>
+				 <div class="check"></div>
+			 </li>
+
+			 <li class="js-option" data-price="1150">
+				 <p>Installation of Landing Gear + Wheel Assembly</p>
+				 <span class="price">$1,150</span>
+				 <div class="check"></div>
+			 </li>
+			</ul>
+	 </div>
+
+	<hr>
+
+				<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Tire Options</span></button>
+				<div class="content">
+					<ul class="accessories-list options-list">
+						<li class="js-option js-radio" data-price="6800">
+							<p>11R - 22.5 (Steel Rims - set of 8)</p>
+							<span class="price">$850 ea.</span>
+							<div class="check"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="8600">
+							<p>445/50 - 22.5 (Super Singles - set of 4)</p>
+							<span class="price">$2,150 ea.</span>
+							<div class="check"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="8400">
+							<p>295/75R - 22.5 (Aluminum Rims - set of 8)</p>
+							<span class="price">$1,050 ea.</span>
+							<div class="check"></div>
+						</li>
+
+					</ul>
+				</div>
+
+	<hr>
+
+			<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Suspension</span></button>
+			<div class="content">
+				<ul class="accessories-list options-list">
+					<li class="js-option js-radio" data-price="12600">
+						<p>Tandem 77.5 in. Axle (Spring Ride)</p>
+						<span class="price">$12,600</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="15650">
+						<p>Tandem 77.5 in. Axle (Air Ride)</p>
+						<span class="price">$15,650</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="21900">
+						<p>Triple 77.5 in. Axle (Spring Ride)</p>
+						<span class="price">$21,900</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="24750">
+						<p>Triple 77.5 in. Axle (Air Ride)</p>
+						<span class="price">$24,750</span>
+						<div class="check"></div>
+					</li>
+				</ul>
+			</div>
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Silage Tailgate</span></button>
+<div class="content">
+
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="4200">
+			<p>6ft. Standard Swing Tailgate</p>
+			<span class="price">$4,200</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="4400">
+				<p>7ft. Standard Swing Tailgate</p>
+				<span class="price">$4,400</span>
+				<div class="check"></div>
+		</li>
+
+
+		<li class="js-option js-radio" data-price="4600">
+			<p>8ft. Standard Swing Tailgate</p>
+			<span class="price">$4,600</span>
+			<div class="check"></div>
+		</li>
+
+
+		<li class="js-option js-radio" data-price="5300">
+			<p>6ft. Air Operated Swing Tailgate</p>
+			<span class="price">$5,300</span>
+			<div class="check"></div>
+		</li>
+
+
+		<li class="js-option js-radio" data-price="5500">
+			<p>7ft. Air Operated Swing Tailgate</p>
+			<span class="price">$5,500</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="5700">
+			<p>8ft. Air Operated Swing Tailgate</p>
+			<span class="price">$5,700</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="7100">
+			<p>6ft. Barn Door Tailgate</p>
+			<span class="price">$7,100</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="7300">
+			<p>7ft. Barn Door Tailgate</p>
+			<span class="price">$7,300</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="7600">
+			<p>8ft. Barn Door Tailgate</p>
+			<span class="price">$7,600</span>
+			<div class="check"></div>
+		</li>
+	</ul>
+</div>
+
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Driver Side Extension</span></button>
+<div class="content">
+
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="0">
+			<p>1ft. Mesh ($65/foot)</p>
+			<span class="price">$65 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>1ft. Solid ($72/foot)</p>
+			<span class="price">$72 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>2ft. Mesh ($68/foot)</p>
+			<span class="price">$68 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>2ft. Solid ($75/foot)</p>
+			<span class="price">$75 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>3ft. Mesh ($71/foot)</p>
+			<span class="price">$71 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>3ft. Solid ($78/foot)</p>
+			<span class="price">$78 per foot</span>
+			<div class="check"></div>
+		</li>
+
+</div>
+
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Passenger Side Extension</span></button>
+<div class="content">
+
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="0">
+			<p>1ft. Mesh ($65/foot)</p>
+			<span class="price">$65 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>1ft. Solid ($72/foot)</p>
+			<span class="price">$72 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>2ft. Mesh ($68/foot)</p>
+			<span class="price">$68 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>2ft. Solid ($75/foot)</p>
+			<span class="price">$75 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>3ft. Mesh ($71/foot)</p>
+			<span class="price">$71 per foot</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>3ft. Solid ($78/foot)</p>
+			<span class="price">$78 per foot</span>
+			<div class="check"></div>
+		</li>
+
+</div>
+
+<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Stripe Kit</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+			<li class="js-option js-radio" data-price="1500">
+				<p>30 ft. Trailer</p>
+				<span class="price">$1,500</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="1600">
+				<p>32 ft. Trailer</p>
+				<span class="price">$1,600</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="1700">
+				<p>34 ft. Trailer</p>
+				<span class="price">$1,700</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="1800">
+				<p>36 ft. Trailer</p>
+				<span class="price">$1,800</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="1900">
+				<p>38 ft. Trailer</p>
+				<span class="price">$1,900</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="2000">
+				<p>40 ft. Trailer</p>
+				<span class="price">$2,000</span>
+				<div class="check"></div>
+			</li>
+		</ul>
+	</div>
+
+<hr>
+
+			<ul class="accessories-list options-list">
+				<li class="js-option" data-price="860">
+					<p>3' LED Light Bar w/ 2 Flood Lights</p>
+					<span class="price">$860</span>
+					<div class="check"></div>
+				</li>
+
+				<li class="js-option" data-price="2750">
+					<p>Grain Cleanout Kit</p>
+					<span class="price">$2,750</span>
+					<div class="check"></div>
+				</li>
+
+			</ul>
+		</section>
+	</li>
+
+
+<li data-selection="summary" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Summary</h1>
+			<span class="steps-indicator">Step <b>5</b> of 5</span>
+		</header>
+
+
+		<ul class="summary-list">
+			<li>
+				<h2>Model</h2>
+
+				<img class="product-preview">
+
+				<h3 class="seriessummary">SB Series</h3>
+
+				<p>
+					The SB series might just be our favorite. Thanks for sending us all your money! Your new SB series manure spreader is going to kick your ass!
+				</p>
+			</li>
+
+
+			<li id="colorsummary" data-summary="colors">
+				<h2>Color</h2>
+
+				<span class="summary-color">
+					<em class="color-swatch" data-color="red"></em>
+					<em class="color-label">Red Passion</em>
+				</span>
+			</li>
+
+			<li data-summary="accessories">
+				<h2>Options and Accessories</h2>
+
+				<ul class="summary-accessories">
+					<li>
+						<p>Uconnect 6.5" colour touchscreen radio navigation sytem with Bluetooth &amp; DAB ($1050)</p>
+					</li>
+
+					<li>
+						<p>Audio &amp; telephone controls on steering wheels ($750)</p>
+					</li>
+				</ul>
+
+			</li>
+		</ul>
+	</section>
+</li>

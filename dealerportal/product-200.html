@@ -1,0 +1,121 @@
+<li data-selection="colors" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Color</h1>
+			<span class="steps-indicator">Step <b>2</b> of 5</span>
+		</header>
+    <p style="text-align: center; padding: 25px;">Choose Your Color</p>
+		<ul class="cd-product-previews">
+			<li class="selected"><img src="img/200/sb200-black.png" alt="Product Preview" class="product-preview"></li>
+		</ul>
+
+		<ul class="cd-product-customizer">
+			<li data-content="Grey" data-price="0" class="selected"><a data-color="grey" href="#0">Grey</a><br>Grey</li>
+		</ul>
+	</section>
+</li>
+
+
+
+
+<li data-selection="accessories" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Options</h1>
+			<span class="steps-indicator">Step <b>4</b> of 4</span>
+		</header>
+<!-- this is the javascript for collapsing sections of the accessories list -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("activate");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";	}
+		});
+}
+</script><!-- end of the collapsible javascript code -->
+
+<br><br><br><br>
+
+				<ul class="accessories-list options-list">
+					<li class="js-option js-radio" data-price="0">
+						<p>425/65R - 22.5 Tires</p>
+						<span class="price">Included</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="1000">
+						<p>550/45 - 22.5 Tires (set of 2)</p>
+						<span class="price">$500 ea.</span>
+						<div class="check"></div>
+					</li>
+				</ul>
+
+
+		<ul class="accessories-list options-list">
+			<li class="js-option" data-price="450">
+				<p>Ag-light Road Package</p>
+				<span class="price">$450</span>
+				<div class="check"></div>
+			</li>
+
+
+		</ul>
+	</section>
+</li>
+
+
+<li data-selection="summary" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Summary</h1>
+			<span class="steps-indicator">Step <b>5</b> of 5</span>
+		</header>
+
+
+		<ul class="summary-list">
+			<li>
+				<h2>Model</h2>
+
+				<img class="product-preview">
+
+				<h3 class="seriessummary">SB Series</h3>
+
+				<p>
+					The SB series might just be our favorite. Thanks for sending us all your money! Your new SB series manure spreader is going to kick your ass!
+				</p>
+			</li>
+
+
+			<li id="colorsummary" data-summary="colors">
+				<h2>Color</h2>
+
+				<span class="summary-color">
+					<em class="color-swatch" data-color="red"></em>
+					<em class="color-label">Red Passion</em>
+				</span>
+			</li>
+
+			<li data-summary="accessories">
+				<h2>Options and Accessories</h2>
+
+				<ul class="summary-accessories">
+					<li>
+						<p>Uconnect 6.5" colour touchscreen radio navigation sytem with Bluetooth &amp; DAB ($1050)</p>
+					</li>
+
+					<li>
+						<p>Audio &amp; telephone controls on steering wheels ($750)</p>
+					</li>
+				</ul>
+
+			</li>
+		</ul>
+	</section>
+</li>

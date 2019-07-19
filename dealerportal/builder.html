@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<!--favicon stuff-->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!--end of favicon stuff-->
+
+	<title>Artex Trailer Builder</title>
+</head>
+<body>
+
+<div class="cd-product-builder">
+
+	<header class="main-header">
+		<a href="index.html"><img style="height: 200px;" src="img/logo.svg"></a>
+
+		<nav class="cd-builder-main-nav disabled">
+			<ul>
+				<li class="active"><a href="#models">Series</a></li>
+				<li><a href="#colors">Color</a></li>
+				<li><a href="#accessories">Options</a></li>
+				<li><a href="#summary">Summary</a></li>
+			</ul>
+		</nav>
+
+
+
+	</header>
+
+	<div class="cd-builder-steps">
+		<ul>
+			<li data-selection="models" class="active builder-step">
+				<section class="cd-step-content">
+					<header>
+						<h1>Select Series</h1>
+						<span class="steps-indicator">Step <b>1</b> of 4</span>
+					</header>
+<br><br><br><br>
+					<ul class="trailerslist models-list options-list cd-col-2">
+
+						<li class="js-option js-radio" data-price="31428" data-model="product-200">
+							<span class="name">SB200</span>
+							<img src="img/200/sb200-black.png" alt="SB200">
+							<span class="price list-price">from $31,428</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-sb">
+							<span class="name">SB Series</span>
+							<img src="img/sb/sb-series-red.png" alt="SB Series">
+							<span class="price list-price">from $46,370</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-sbx">
+							<span class="name">SBX Series</span>
+							<img src="img/sbx/sbx-series-blue.png"  alt="SBX Series">
+							<span class="price list-price">from $61,595</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-cb">
+							<span class="name">CB Series</span>
+							<img src="img/cb/cb-series-grey.png" alt="CB Series">
+							<span class="price list-price">from $99,700</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-ct">
+							<span class="name">CT Series</span>
+							<img src="img/ct/ct-series-black.png" alt="CT Series">
+							<span class="price list-price">from $107,990</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-tr">
+							<span class="name">TR Series</span>
+							<img src="img/tr/tr-series-green.png" alt="TR Series">
+							<span class="price list-price">from $59,000</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="0" data-model="product-box">
+							<span class="name">Truck Box</span>
+							<img src="img/box/truck-box-white.png" alt="Truck Box">
+							<span class="price list-price">from $70,840</span>
+							<div class="radio"></div>
+						</li>
+					</ul> <!--/trailerslist-->
+				</section>
+			</li>
+			<!-- additional content will be inserted using ajax -->
+		</ul>
+	</div>
+
+	<footer class="cd-builder-footer disabled step-1">
+		<div class="selected-product">
+			<img src="img/product01_col01.jpg" alt="Product preview">
+
+			<div class="tot-price">
+				<span>Total</span>
+				<span class="total">$<b>0</b></span>
+			</div>
+		</div>
+
+		<nav class="cd-builder-secondary-nav">
+			<ul>
+				<li class="next nav-item">
+					<ul>
+            <li class="visible"><a href="#0">Color</a></li>
+						<li><a href="#0">Options</a></li>
+						<li><a href="#0">Summary</a></li>
+						<li class="buy"><a href="#0">Buy Now</a></li>
+					</ul>
+				</li>
+				<li class="prev nav-item">
+					<ul>
+						<li class="visible"><a href="#0">Series</a></li>
+						<li><a href="#0">Colors</a></li>
+						<li><a href="#0">Options</a></li>
+			      <li><a href="#0">Summary</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<span class="alert">Please, select a model first!</span>
+	</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

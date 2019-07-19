@@ -1,0 +1,477 @@
+<li data-selection="colors" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Select Color</h1>
+			<span class="steps-indicator">Step <b>2</b> of 5</span>
+		</header>
+    <p style="text-align: center; padding: 25px;">Choose Your Color</p>
+		<ul class="cd-product-previews">
+			<li class="selected"><img src="img/sb/sb-series-black.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/sb/sb-series-grey.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/sb/sb-series-red.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/sb/sb-series-blue.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/sb/sb-series-green.png" alt="Product Preview" class="product-preview"></li>
+			<li><img src="img/sb/sb-series-white.png" alt="Product Preview" class="product-preview"></li>
+		</ul>
+
+		<ul class="cd-product-customizer">
+			<li data-content="Black" data-price="0" class="selected"><a data-color="black" href="#0">Black</a><br><span class="large">Black</span></li>
+			<li data-content="Grey" data-price="0"><a data-color="grey" href="#0">Grey</a><br><span class="large">Grey</span></li>
+			<li data-content="Red" data-price="0"><a data-color="red" href="#0">Red</a><br><span class="large">Red</span></li>
+			<li data-content="Blue" data-price="0"><a data-color="blue" href="#0">Blue</a><br><span class="large">Blue</span></li>
+			<li data-content="Green" data-price="0"><a data-color="green" href="#0">Green</a><br><span class="large">Green</span></li>
+			<li data-content="White" data-price="0"><a data-color="white" href="#0">White</a><br><span class="large">White</span></li>
+		</ul>
+	</section>
+</li>
+
+<li data-selection="accessories" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Options</h1>
+			<span class="steps-indicator">Step <b>4</b> of 4</span>
+		</header>
+<!-- this is the javascript for collapsing sections of the accessories list -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("activate");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";	}
+		});
+}
+</script>
+<!-- end of the collapsible javascript code -->
+<br><br><br><br>
+			<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Trailer Options</span></button>
+			 <div class="content"><!--container for holding all of the collapsible content-->
+				<ul class="accessories-list options-list">
+
+						<li class="js-option js-radio" data-price="36950">
+							<p>SBX500</p>
+							<ul class="trailer-description">
+								<li>Length: 16'</li>
+								<li>Width: 6'6"</li>
+								<li>Wall Height: 4'</li>
+								<li>Capacity: 416 struck cu. ft</li>
+							</ul>
+							<img class="trailer-description-image" src="img/sbx/sbx-500-diagram.png"></img>
+							<span class="price">$36,950</span>
+						</li>
+
+						<li class="js-option js-radio" data-price="37450">
+							<p>SBX550</p>
+							<ul class="trailer-description">
+								<li>Length: 18'</li>
+								<li>Width: 6'6"</li>
+								<li>Wall Height: 4'</li>
+								<li>Capacity: 468 struck cu. ft</li>
+							</ul>
+							<img class="trailer-description-image" src="img/sbx/sbx-550-diagram.png"></img>
+							<span class="price">$37,450</span>
+
+						<li class="js-option js-radio" data-price="37950">
+							<p>SBX600</p>
+							<ul class="trailer-description">
+								<li>Length: 20'</li>
+								<li>Width: 6'6"</li>
+								<li>Wall Height: 4'</li>
+								<li>Capacity: 520 struck cu. ft</li>
+							</ul>
+							<img class="trailer-description-image" src="img/sbx/sbx-550-diagram.png"></img>
+							<span class="price">$37,950</span>
+
+							<li class="js-option js-radio" data-price="36210">
+							<p>SBX700</p>
+							<ul class="trailer-description">
+								<li>Length: 22'</li>
+								<li>Width: 6'6"</li>
+								<li>Wall Height: 4'</li>
+								<li>Capacity: 572 struck cu. ft</li>
+							</ul>
+							<img class="trailer-description-image" src="img/sbx/sbx-700-tandam-diagram.png"></img>
+							<span class="price">$38,450</span>
+							</li>
+
+							<li class="js-option js-radio" data-price="39500">
+							<p>SBX800</p>
+							<ul class="trailer-description">
+								<li>Length: 26'</li>
+								<li>Width: 6'6"</li>
+								<li>Wall Height: 4'</li>
+								<li>Capacity: 676 struck cu. ft</li>
+							</ul>
+							<img class="trailer-description-image" src="img/sbx/sbx-700-tandam-diagram.png"></img>
+							<span class="price">$39,500</span>
+							</li>
+
+					</ul><!--end trailer models-->
+			</div>
+
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Optional Motor Upgrades</span></button>
+<div class="content">
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="920">
+			<p>TG0405 Parker Upgrade</p>
+			<span class="price">$920</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="1150">
+			<p>TG0530 Parker Upgrade</p>
+			<span class="price">$1,150</span>
+			<div class="check"></div>
+		</li>
+	</ul>
+</div>
+
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Floor Chain Options</span></button>
+<div class="content">
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="0">
+			<p>88C Floor Chain</p>
+			<span class="price">Included</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="0">
+			<p>WR78 Floor Chain</p>
+			<span class="price">Included</span>
+			<div class="check"></div>
+		</li>
+	</ul>
+</div>
+
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Cross Slats</span></button>
+<div class="content">
+	<ul class="accessories-list options-list">
+		<li class="js-option js-radio" data-price="0">
+			<p>Channel Cross Slats</p>
+			<span class="price">Included</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="1550">
+			<p>Double Channel Cross Slats</p>
+			<span class="price">$1,550</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="500">
+			<p>Tube Cross Slats</p>
+			<span class="price">$500</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="2550">
+			<p>Double Tube Cross Slats</p>
+			<span class="price">$2,550</span>
+			<div class="check"></div>
+		</li>
+	</ul>
+</div><!--end cross slats-->
+
+<hr>
+			<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Tailgate Options</span></button>
+			 <div class="content"><!--container for holding all of the collapsible content-->
+
+				 <ul class="accessories-list options-list">
+
+					 <li class="js-option js-radio" data-price="0">
+						 <p>No Tailgate</p>
+						 <span class="price">$0</span>
+						 <div class="check"></div>
+					</li>
+
+					 <li class="js-option js-radio" data-price="3980">
+						 <p>Standard Guillotine Gate</p>
+						 <span class="price">$3,980</span>
+						 <div class="check"></div>
+					 </li>
+
+					</ul>
+			 </div>
+
+<hr>
+
+      <button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Tire Options</span></button>
+			<div class="content">
+				<ul class="accessories-list options-list">
+
+					<li class="js-option js-radio" data-price="0">
+						<p>None</p>
+						<span class="price">$0</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="4740">
+						<p>425/65R - 22.5 (set of 4)</p>
+						<span class="price">$1,185 ea.</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="5560">
+						<p>550/45 - 22.5 (set of 4)</p>
+						<span class="price">$1,390 ea.</span>
+						<div class="check"></div>
+					</li>
+
+					<li class="js-option js-radio" data-price="7140">
+						<p>600/50 - 22.5 (set of 4)</p>
+						<span class="price">$1,785 ea.</span>
+						<div class="check"></div>
+          </li>
+				</ul>
+    	</div>
+
+<hr>
+
+		<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">PTO's</span></button>
+		<div class="content">
+			<ul class="accessories-list options-list">
+				<li class="js-option js-radio" data-price="0">
+					<p>1 3/8" Z20 Shear Yoke Driveline (Small 1,000)</p>
+					<span class="price">Included</span>
+					<div class="check"></div>
+				</li>
+
+				<li class="js-option js-radio" data-price="0">
+					<p>1 3/4" Z20 Shear Yoke Driveline (Large 1,000)</p>
+					<span class="price">Included</span>
+					<div class="check"></div>
+				</li>
+			</ul>
+		</div>
+
+<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Select Hitch Style</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+			<li class="js-option js-radio" data-price="0">
+				<p>Clevis Style</p>
+				<span class="price">Included</span>
+				<div class="check"></div>
+			</li>
+			<li class="js-option js-radio" data-price="0">
+				<p>Articulating Bull Pull Style</p>
+				<span class="price">Included</span>
+				<div class="check"></div>
+			</li>
+		</ul>
+	</div>
+
+<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Scale System</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+				<li class="js-option js-radio" data-price="9950">
+					<p>Digi-Star GT400 Monitor System - Standard w/ Display</p>
+					<span class="price">$9,950</span>
+					<div class="check"></div>
+				</li>
+
+				<li class="js-option js-radio" data-price="12500">
+					<p>Digi-Star NT560 Monitor System w/ Analog - stores app info, displays tons/acres when used w/ GPS</p>
+					<span class="price">$12,500</span>
+					<div class="check"></div>
+				</li>
+
+				<li class="js-option js-radio" data-price="16700">
+					<p>Raven CR7 Monitor and RCM - Variable Rates</p>
+					<span class="price">$16,700</span>
+					<div class="check"></div>
+				</li>
+
+		</ul>
+	</div>
+
+<hr>
+
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Attachments</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+
+			<li class="js-option" data-price="0">
+				<p>No Attachments</p>
+				<span class="price">$0</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="15925">
+				<p>Vertical Beater</p>
+				<span class="price">$15,925</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="25000">
+				<p>Cyclone</p>
+				<span class="price">$25,000</span>
+				<div class="check"></div>
+			</li>
+	</div>
+
+<hr>
+	<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Brake Selection</span></button>
+	<div class="content">
+		<ul class="accessories-list options-list">
+			<li class="js-option js-radio" data-price="5200">
+				<p>Hydraulic Brakes</p>
+				<span class="price">$5,200</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option js-radio" data-price="5200">
+				<p>Air Brakes</p>
+				<span class="price">$5,200</span>
+				<div class="check"></div>
+			</li>
+		</ul>
+	</div>
+<hr>
+
+<button class="collapsible"><span class="huge">+</span>&emsp;<span class="large">Stripe Kit</span></button>
+<div class="content">
+	<ul class="accessories-list options-list">
+
+		<li class="js-option js-radio" data-price="870">
+			<p>SBX500 Stripe Kit</p>
+			<span class="price">$870</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="890">
+			<p>SBX550 Stripe Kit</p>
+			<span class="price">$890</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="910">
+			<p>SBX600 Stripe Kit</p>
+			<span class="price">$910</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="930">
+			<p>SBX700 Stripe Kit</p>
+			<span class="price">$930</span>
+			<div class="check"></div>
+		</li>
+
+		<li class="js-option js-radio" data-price="950">
+			<p>SBX800 Stripe Kit</p>
+			<span class="price">$950</span>
+			<div class="check"></div>
+		</li>
+
+	</ul>
+</div>
+
+<hr>
+		<ul class="accessories-list options-list">
+			<li class="js-option" data-price="860">
+				<p>3' LED Light Bar w/ 2 Flood Lights</p>
+				<span class="price">$860</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="1735">
+				<p>Electronic Flow Control + Installation</p>
+				<span class="price">$1735</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="810">
+				<p>Bulkhead - 4'</p>
+				<span class="price">$810</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="1090">
+			  <p>Guillotine Tailgate Height Gauge</p>
+				<span class="price">$1,090</span>
+				<div class="check"></div>
+			</li>
+
+
+			<li class="js-option" data-price="660">
+				<p>Beater Wings</p>
+				<span class="price">$660</span>
+				<div class="check"></div>
+			</li>
+
+			<li class="js-option" data-price="400">
+				<p>Floor Chain Pressure Relief Valve</p>
+				<span class="price">$400</span>
+				<div class="check"></div>
+			</li>
+
+		</ul>
+
+
+
+	</section>
+</li>
+
+
+<li data-selection="summary" class="builder-step first-load">
+	<section class="cd-step-content">
+		<header>
+			<h1>Summary</h1>
+			<span class="steps-indicator">Step <b>5</b> of 5</span>
+		</header>
+
+
+		<ul class="summary-list">
+			<li>
+				<h2>Model</h2>
+
+				<img class="product-preview">
+
+				<h3 class="seriessummary">SB Series</h3>
+
+				<p>
+					The SB series might just be our favorite. Thanks for sending us all your money!
+				</p>
+			</li>
+
+
+			<li id="colorsummary" data-summary="colors">
+				<h2>Color</h2>
+
+				<span class="summary-color">
+					<em class="color-swatch" data-color="red"></em>
+					<em class="color-label">Red Passion</em>
+				</span>
+			</li>
+
+			<li data-summary="accessories">
+				<h2>Options and Accessories</h2>
+
+				<ul class="summary-accessories">
+					<li>
+						<p>Uconnect 6.5" colour touchscreen radio navigation sytem with Bluetooth &amp; DAB ($1050)</p>
+					</li>
+
+					<li>
+						<p>Audio &amp; telephone controls on steering wheels ($750)</p>
+					</li>
+				</ul>
+
+			</li>
+		</ul>
+	</section>
+</li>
