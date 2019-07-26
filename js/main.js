@@ -241,4 +241,54 @@ jQuery(document).ready(function($){
 			new ProductBuilder($(this));
 		});
 	}
+
+	$('.generate-invoice').magnificPopup({
+		type:'inline',
+		midClick: true,
+		items: {
+			src: '#popup',
+			type: 'inline'
+		}
+	});
+
+	$(document).on('submit','.invoice-form', function (e) {
+		e.preventDefault();
+
+		var form = $(this);
+		var series = $('.trailerslist .js-option.selected ').find('.name').html();
+		var colorsImage = $('[data-selection="colors"] .cd-product-previews li.selected img').attr('src');
+		var color = $('[data-selection="colors"] .cd-product-customizer li.selected').attr('data-content');
+		var price = $('.tot-price .total').html();
+		var options = [];
+
+		$('.summary-accessories li').each(function () {
+			var li = $(this);
+			options.push(li.html());
+		});
+
+		//var accessories =
+		var params = {
+			name : series,
+			image: location.origin + '/' + colorsImage,
+			price: price,
+			options: options,
+			email: form.find('[name="email"]').val(),
+			email2: form.find('[name="email2"]').val()
+		};
+
+		$.ajax({
+			url: 'pdfinvoice/worker',
+			type: 'post',
+			data: params,
+			beforeSend: function () {
+				form.addClass('loader');
+			},
+			success: function () {
+				form.removeClass('loader');
+				form.find('.message-success').removeClass('hidden');
+				form.find('input').val('');
+			}
+		});
+
+	});
 });
